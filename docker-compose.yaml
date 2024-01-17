@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  db:
+    image: ticweb_analytics
+    build: .
+    restart: always
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - ases_ticweb
+
+networks: 
+  ases_ticweb: 
+    driver: bridge
+

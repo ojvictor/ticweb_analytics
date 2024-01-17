@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# gem "rails"
+gem 'net-http'
+gem 'mechanize'
+gem 'pg'
+gem 'filequeue'
+gem 'concurrent-ruby'
+gem 'debug'
+gem 'process'
+gem 'uri'
